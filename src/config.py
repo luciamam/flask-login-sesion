@@ -2,7 +2,7 @@ class Config():
     SECRET_KEY='ac795742030af3592e46af3c40b64c90'
 
 
-class  DEvelopmentConfig():
+class  DevelopmentConfig(Config):
 
     DEBUG=True
     MYSQL_HOST='localhost'
@@ -23,7 +23,7 @@ class  ProductionConfig(Config):
 
 
 config={
-        'development': DEvelopmentConfig,
+        'development': DevelopmentConfig,
         'production': ProductionConfig
 }
 
